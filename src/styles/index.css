@@ -1,0 +1,125 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* Root Variables */
+
+:root {
+  --Ff: "Arial", sans-serif;
+  --Fb: 1rem;
+  --black: #000000;
+  --white: #ffffff;
+  --fg: var(--black);
+  --bg: var(--white);
+}
+
+@supports(height: 100dvh) {
+  :root {
+    --vh: 100dvh;
+  }
+}
+
+
+/* Universal Resets */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  border: none;
+  outline: none;
+  appearance: none;
+}
+
+input::placeholder,
+textarea::placeholder {
+  background: inherit;
+  color: inherit;
+}
+
+textarea,
+input,
+button,
+select {
+  background: inherit;
+  color: inherit;
+}
+
+input[type="button"],
+input[type="submit"],
+input[type="reset"],
+div[role="button"] {
+  cursor: pointer;
+}
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  -webkit-appearance: none;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+select {
+  background: none;
+  cursor: pointer;
+}
+
+textarea {
+  resize: none;
+}
+
+
+/* HTML/Body Styling */
+
+html {
+  font-size: 16px;
+  font-family: var(--Ff);
+  line-height: 1.2;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
